@@ -13,7 +13,10 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'kaminari'
 gem "friendly_id", "~> 4.0.1"
-gem 'simple-private-messages', '0.0.0', :git => 'git://github.com/jongilbraith/simple-private-messages.git'
+gem 'simple-private-messages', '0.0.0', :git => 'git@github.com:jongilbraith/simple-private-messages.git'
+gem 'haml'
+gem "ckeditor", "3.7.1"
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +28,10 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test do
+	gem "rspec", "~> 2.11.0"
 end
 
 gem 'jquery-rails'
